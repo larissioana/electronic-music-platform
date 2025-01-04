@@ -2,7 +2,7 @@ import './shuffle.css'
 import playIcon from '../../assets/play icon(4).png'
 import cover from '../../assets/Niko Klest_single cover 1(1).png'
 import nextTrackIcon from '../../assets/Layer_1.png'
-import stopPlayer from '../../assets/pause icon.png'
+import stopPlayer from '../../assets/pause Icon.png'
 import { useState } from 'react'
 
 const Shuffle = () => {
