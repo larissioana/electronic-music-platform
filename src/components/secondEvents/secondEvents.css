@@ -1,0 +1,315 @@
+.second-events-container
+{
+    display: flex;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.second-events-first 
+{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.second-events-first::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.second-events-first:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Light";
+  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.second-events-first h1 {
+    font-size: 56px;
+    color: rgba(236, 255, 235, .5);
+    text-transform: uppercase;
+    font-family: "GT Walsheim Pro";
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    padding-top: 7rem;
+    mix-blend-mode: luminosity;
+}
+
+.second-events-first h2
+{
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-size: 46px;
+    font-family: "GT Walsheim Pro Regular";
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding-top: 2rem;
+}
+
+.second-events-first p 
+{
+    color: var(--whiteColor);
+    padding-top: 1rem;
+    font-family: "GT Walsheim Pro";
+    font-size: 26px;
+}
+
+.second-events-first button 
+{
+    background: var(--mintColor);
+    color: var(--burgundyColor);
+    border-radius: 32px;
+    font-size: 39px;
+    font-family: "GT Walsheim Pro Regular";
+    width: fit-content;
+    padding: .7rem 4.5rem;
+    margin-top: 3rem;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: all .8s ease;
+    border: none;
+}
+
+.second-events-first button:hover 
+{
+    background: var(--yellowColor);
+    border-radius: 0;
+    transform: scale(1.1);
+}
+
+.second-events-second,
+.second-events-third 
+{
+    flex: 1;
+}
+
+.second-events-second 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.play-btn-container 
+{
+    background: var(--mintColor);
+    width: 288px;
+    height: 284px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-btn-container h4 
+{
+    margin-top: 13rem;
+    font-size: 10px;
+    color: var(--burgundyColor);
+    font-family: "GT Walsheim Pro Regular";
+    z-index: 10;
+}
+
+.play-btn-container h5 
+{
+    font-size: 12px;
+    font-family: "GT Walsheim Pro Light";
+    z-index: 10;
+}
+
+.play-btn-container p 
+{
+    font-size: 9px;
+    font-family: "GT Walsheim Pro";
+    z-index: 10;
+    color: black;
+    font-weight: 200;
+}
+
+.Niko-Klest-cover
+{
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.layer 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(211, 244, 209, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 8;
+    transition: background 4s ease, backdrop-filter 4s ease;
+}
+
+.play
+{
+    position: absolute;
+    z-index: 10;
+}
+
+
+.second-img 
+{
+    object-fit: cover;
+}
+
+.second-img-container
+{
+    position: relative;
+    cursor: pointer;
+    width: 264px;
+    height: 264px;
+}
+
+.second-img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.second-img-container:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+.second-events-third
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.second-events-third::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.second-events-third:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+
+.third-events-description
+{
+    background: var(--whiteColor);
+    padding: 1rem;
+}
+
+.third-events-description h3 
+{
+    color: var(--burgundyColor);
+    font-size: 14px;
+    font-family: "MuseoModerno", sans-serif;
+    padding-bottom: .5rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.third-events-description p 
+{
+    font-size: 10px;
+    margin-bottom: .7rem;
+    font-family: "GT Walsheim Pro Regular";
+    color: var(--blackColor);
+}
+
+.third-event-btn 
+{
+    background: var(--burgundyColor);
+    border: none;
+    color: var(--yellowColor);
+    padding: .2rem 2.3rem;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.third-event-btn:hover 
+{
+    background: var(--burgundyColor);
+    color: var(--whiteColor);
+    transform: scale(1.1);
+    border-radius: 0;
+}
+

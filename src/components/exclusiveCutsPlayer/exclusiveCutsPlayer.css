@@ -1,0 +1,343 @@
+.exclusive-cuts-player-container 
+{
+    
+    background: #cddecc;
+    background: rgb(236, 255, 235, .74);
+    padding: 2rem 3rem;
+    border-radius: 5rem;
+    display: flex;
+    column-gap: 3rem;
+    position: relative;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.image-player 
+{
+    position: relative;
+}
+
+.img-event
+{
+    object-fit: cover;
+    position: relative;
+    border-radius: 2.4rem;
+    width: 342px;
+    height: 342px;
+}
+
+.img-event-play  
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.design-line 
+{
+    width: .18rem;
+    height: 253px;
+    background: var(--blackColor);
+    
+}
+
+.player
+{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.player-nav 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.player-nav-right 
+{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.player-nav-left 
+{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro";
+  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Light Oblique";
+  src: url('../../assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.filter-btn 
+{
+    background: var(--blackColor);
+    display: flex;
+    align-items: center;
+    border: none;
+    color: var(--mintColor);
+    gap: 1rem;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    width: 130px;
+    height: 31px;
+    font-size: 22px;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.date-btn 
+{
+    background: var(--burgundyColor);
+    border: none;
+    border-radius: 1rem;
+    color: var(--whiteColor);
+    padding: 0rem .5rem;
+    height: 24px;
+    width: 88px;
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    font-size: 22px;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.date-btn img 
+{
+    width: 14px;
+    height: 7px;
+    object-fit: cover;
+}
+
+.player-nav-right
+{
+    flex-wrap: wrap;
+}
+
+.player-nav-right h4 
+{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 22px;
+    position: relative;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 0rem .4rem;
+    overflow: visible;
+    z-index: 1;
+}
+
+.player-nav-right h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    border-radius: 8px; 
+    background: rgb(255, 255, 255); 
+    z-index: -1;
+}
+
+.player-nav-right h4:nth-child(3)::before, 
+.player-nav-right h4:nth-child(4)::before {
+    background: var(--yellowColor);
+}
+
+.player-song 
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--whiteColor);
+    margin-top: .9rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    border:2px solid white;
+    backdrop-filter: blur(8px);
+}
+
+.player-song h1 
+{
+    font-size: clamp(1.9rem, 2vw, 0.8rem);
+    font-weight: 300;
+    color: var(--burgundyColor);
+    font-family: "GT Walsheim Pro Regular";
+}
+
+.tracks-container
+{
+    display: flex;
+    align-items: start;
+    padding-top: 1.5rem;
+    justify-content: flex-start;
+    gap: .7rem;
+    padding-left: 2.6rem;
+}
+
+.tracks-container img 
+{
+    width: 19px;
+    height: 19px
+}
+
+.tracks 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tracks div
+{
+    font-size: 23px;
+    font-family: "GT Walsheim Pro";
+    font-weight: 400;
+    margin-top: -.3rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: flex-end;
+}
+
+.small-line
+{
+    width: 4.6px;
+    height: 32.5px;
+    background: black;
+    border-radius: 1rem;
+    margin-bottom: -.5rem;
+}
+.icons-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.social-media 
+{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icons-container button 
+{
+    background: var(--yellowColor);
+    border: none;
+    color: black;
+    font-size: 22px;
+    padding: .5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: "MuseoModerno", sans-serif;
+    width: 238px;
+    height: 52px;
+    transition: all .8s ease-in;
+    cursor: pointer;
+}
+
+.icons-container button:hover 
+{
+    background: var(--burgundyColor);
+    color: var(--whiteColor);
+    transform: scale(1.1);
+    border-radius: 0;
+}
+
+.exclusive-cuts-player-desc
+{
+    width: 100%;
+    padding-top: 1.4rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.player-desc-small-line 
+{
+    width: 4.6px;
+    height: 23.5px;
+    background: black;
+    border-radius: 1rem;
+    margin-left: -2rem;
+}
+
+.exclusive-cuts-player-desc p 
+{
+    color: var(--burgundyColor);
+    font-size: 19.5px;
+    font-family: "GT Walsheim Pro Light Oblique";
+    width: 100%;
+}
+
+@media screen and (max-width: 1390px)
+{
+    .exclusive-cuts-player-container
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .tracks-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .design-line
+    {
+        display: none;
+    }
+
+    .player-desc-small-line
+    {
+        column-gap: 2rem;
+    }
+}

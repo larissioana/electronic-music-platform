@@ -1,0 +1,317 @@
+.events-container
+{
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.events-container img 
+{
+    object-fit: cover;
+}
+
+.first-event,
+.third-event 
+{
+    flex: 2;
+    cursor: pointer;
+    position: relative;
+    height: 382px;
+    max-width: 100%; 
+}
+
+.third-event,
+.first-event
+{
+    width: 568px;
+}
+
+.first-event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.first-event:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+.second-event img 
+{
+    object-fit: cover;
+    object-position: bottom;
+    width: 264px;
+    height: 264px;
+}
+
+.second-event 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.second-event:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+
+.second-event-desc
+{
+    background: var(--whiteColor);
+    width: 264px;
+    padding: .9rem 1rem;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro";
+  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.second-event-desc h3 
+{
+    color: var(--burgundyColor);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.second-event-desc p 
+{
+    font-size: 10px;
+    padding-top: .3rem;
+    line-height: .7rem;
+    font-family: 'GT Walsheim Pro Regular', sans-serif; 
+}
+
+.second-event-desc button 
+{
+    width: 100%;
+    margin-top: 0.5rem;
+    background: var(--burgundyColor);
+    border: none;
+    color: var(--yellowColor);
+    text-transform: uppercase;
+    padding: .2rem;
+    font-size: 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .8s ease-in;
+}
+
+.second-event-desc button:hover 
+{
+    background: var(--yellowColor);
+    color: var(--burgundyColor);
+    transform: scale(1.1);
+    border-radius: 0;
+}
+
+.third-event
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.third-event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.third-event:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
+
+.third-event h2 
+{
+    background: var(--mintColor);
+    margin: 1.5rem 1.4rem 1rem 1.4rem;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "MuseoModerno", serif;
+}
+
+.third-event-flex-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0rem 1.4rem;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.third-event-flex-container .first-container 
+{
+    background: rgba(236, 255, 235, .799);
+    backdrop-filter: blur(13px);
+    width: 194px;
+    height: 230px;
+    border-radius: 2rem;
+}
+
+.first-container 
+{
+    padding: 1rem 1rem;
+}
+
+.first-container h3 
+{
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 300;
+    font-family: "GT Walsheim Pro Regular", sans-serif;
+    line-height: 1rem;
+}
+
+.first-container p 
+{
+    font-size: 12px;
+    line-height: .9rem;
+    padding-top: .3rem;
+    font-weight: 100;
+    font-family: "GT Walsheim Pro Regular", sans-serif;
+}
+
+.first-container p span 
+{
+    font-weight: lighter;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+
+.first-container h4
+{
+    font-weight: 100;
+    line-height: 1.3rem;
+    padding-top: .3rem;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+
+.first-container h4 span 
+{
+    font-size: 1.3rem;
+}
+
+.second-container button 
+{
+    border-radius: 23px;
+    background: var(--yellowColor);
+    font-size: 24px;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    letter-spacing: .033rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "MuseoModerno", sans-serif;
+    color: var(--burgundyColor);
+    cursor: pointer;
+    transition: all .8s ease-in;
+}
+
+.second-container button:hover 
+{
+    background: var(--burgundyColor);
+    color: var(--whiteColor);
+    transform: scale(1.1);
+    border-radius: 0;
+}
+
+.third-event-desc 
+{
+    background: rgba(59, 2, 25, .3);
+    color: var(--whiteColor);
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    font-size: 12px;
+    border-radius: 1rem;
+    padding: .2rem .4rem;
+    text-align: center;
+    font-family: "GT Walsheim Pro", sans-serif;
+    margin-right: 1.4rem;
+}
+
+@media screen and (max-width: 1372px) {
+    .events-container {
+        row-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .first-event,
+    .second-event,
+    .third-event {
+        height: auto; 
+        width: 100%;
+        flex: 1;
+        max-width: 100%; 
+    }
+
+    .second-event {
+        padding-right: 0;
+    }
+}

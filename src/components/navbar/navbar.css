@@ -1,0 +1,131 @@
+.nav 
+{
+    display: flex;
+    justify-content: space-between;
+    height: 4.25rem;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    z-index: 99;
+}
+
+.logo-link
+{
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-family: "Miriam Libre", serif;
+    font-size: 3.25rem;
+}
+
+.nav-links 
+{
+    display: flex;
+    align-items: center;
+   /*  gap: 2rem; */
+}
+
+
+.burger-menu 
+{
+    cursor: pointer;
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-size: 1.56rem;
+    font-weight: medium;
+    position: relative;
+    border-radius: 34px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 1rem 1.7rem;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 0;
+    background: var(--yellowColor); 
+    border-radius: 34px;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: height 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--burgundyColor);
+    cursor: pointer;
+}
+
+.link:hover::before {
+    height: 100%;
+    animation: bgColorTransition 1s ease-in-out forwards; 
+    cursor: pointer;
+}
+
+@keyframes bgColorTransition {
+    0% {
+        background-color: var(--yellowColor);
+        color: var(--blackColor);
+    }
+    50% {
+        background-color: var(--burgundyColor);
+        color: var(--whiteColor);
+    }
+    100% {
+        background-color: var(--mintColor);
+    }
+}
+.active-link 
+{
+    background: var(--mintColor);
+    color: var(--burgundyColor);
+    padding: 1rem 1.5rem;
+    border-radius: 34px;
+}
+
+@media screen and (max-width: 1220px)
+{
+    .burger-menu
+    {
+        display: block;
+        z-index: 99;
+    }
+
+    .nav-links
+    {
+        display: none;
+    }
+
+    .logo-link 
+    {
+        z-index: 99;
+        font-size: 2.5rem;
+        position: relative;
+    }
+
+    .mobile-menu 
+    {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        top: 0rem;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.4rem;
+        background: var(--blackColor);
+        background: rgba(0,0,0,.8);
+        backdrop-filter: blur(8px);
+    }
+}

@@ -1,0 +1,260 @@
+.shuffle-container 
+{
+    padding: 3rem 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.shuffle-left 
+{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+
+.shuffle-right:hover 
+{
+    border: 8px solid var(--mintColor);
+}
+
+.shuffle-right-cover 
+{
+    opacity: .4;
+    opacity: .8;
+    z-index: 1;
+    transition: opacity .5s ease-in;
+    width: 100%;
+    height: 100%;
+}
+
+.playing 
+{
+    opacity: .4;
+}
+
+.shuffle-right img:nth-child(1)
+{
+    width: 264px;
+    height: 264px;
+    border-radius: 5rem;
+}
+
+.shuffle-text 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shuffle-text button 
+{
+    color: var(--burgundyColor);
+    background: var(--mintColor);
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+    height: 64px;
+    width: 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shuffle-title 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.shuffle-title h1 
+{
+    color: var(--whiteColor);
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 700;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Light Oblique";
+  src: url('../../assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Regular";
+  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.shuffle-title h2
+{
+    color: var(--whiteColor);
+    font-size: 36px;
+    font-family: "GT Walsheim Pro Light Oblique";
+    margin-top: -.5rem;
+}
+
+.shuffle-tracks 
+{
+    background: #8f8d8d;
+    margin-top: 1rem;
+    border-radius: 45px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    padding: 1rem;
+}
+
+.shuffle-track 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.img-next-track 
+{
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro";
+  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.shuffle-track
+{
+    font-family: "GT Walsheim Pro Regular";
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--mintColor);
+}
+
+.shuffle-tracks h3 
+{
+    font-size: 22px;
+    font-family: "GT Walsheim Pro Regular";
+    font-weight: bold;
+    color: var(--whiteColor);
+}
+
+
+.shuffle-right 
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-left: 4rem;
+    position: relative;
+    width: 264px;
+    height: 264px;
+}
+
+.play-white 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.stop-white 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52.92px;
+    height: 52.99px;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.short-line 
+{
+    width: .277rem;
+    height: 1.4rem;
+    background: var(--blackColor);
+    border-radius: 1rem;
+    margin-left: 2rem;
+}
+
+
+@media screen and (max-width: 900px)
+{
+    .shuffle-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shuffle-text
+    {
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shuffle-left
+    {
+        flex: 1;
+    }
+
+    .shuffle-track
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .img-next-track
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .shuffle-tracks
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shuffle-right
+    {
+        margin: 0;
+    }
+}

@@ -1,0 +1,64 @@
+:root
+{
+  --whiteColor: #fffcfb;
+  --mintColor: #ecffeb;
+  --yellowColor: #ffc800;
+  --blackColor: #101010;
+  --burgundyColor: #3b0219;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  overflow-x: hidden;
+  background: var(--blackColor);
+  font-family: "MuseoModerno", serif;
+}
+
+
+@font-face 
+{
+  font-family: "GT Walsheim";
+  src: url('./assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes moveBorder {
+  0% {
+      border-top: 1px solid var(--mintColor);
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent;
+  }
+  25% {
+      border-top: 1px solid transparent;
+      border-right: 1px solid var(--mintColor);
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent;
+  }
+  50% {
+      border-top: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid var(--mintColor);
+      border-left: 1px solid transparent;
+  }
+  75% {
+      border-top: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid var(--mintColor);
+  }
+  100% {
+      border-top: 1px solid var(--mintColor);
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent;
+  }
+}

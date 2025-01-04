@@ -1,0 +1,30 @@
+.header-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;  
+    z-index: 1;
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+}
+
+.header-container:hover::before {
+    border-color: var(--mintColor);  
+    animation: moveBorder 3s linear infinite;  
+}
