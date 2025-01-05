@@ -39,7 +39,7 @@
 
 .second-events-first h1 {
     font-size: 46px;
-    color: rgba(236, 255, 235, .5);
+    color: var(--yellowColor);
     text-transform: uppercase;
     font-family: "GT Walsheim Pro Bold";
     font-weight: 700;
@@ -47,6 +47,7 @@
     z-index: 1;
     padding-top: 7rem;
     mix-blend-mode: luminosity;
+    -webkit-text-stroke: 0.25px var(--mintColor); 
 }
 
 .second-events-first h2

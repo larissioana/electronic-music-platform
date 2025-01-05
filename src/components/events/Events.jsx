@@ -1,6 +1,6 @@
 import './events.css'
 import event1 from '../../assets/alacasa club.png'
-import event2 from '../../assets/sven-olson---ep-cover 1.png'
+import event2 from '../../assets/sven-olson---ep-cover 1(4).png'
 import event3 from '../../assets/event3.png'
 
 const Events = () => {

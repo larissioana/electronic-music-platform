@@ -1,5 +1,5 @@
 import './exclusiveCutsPlayer.css'
-import event from '../../assets/sven-olson---ep-cover 1.png'
+import event from '../../assets/sven-olson---ep-cover 1(4).png'
 import playIcon from '../../assets/play icon(3).png'
 import arrowIcon from '../../assets/Vector 5.png'
 import filterIcon from '../../assets/Group 11(1).png'
