@@ -17,6 +17,10 @@
     flex: 5;
 }
 
+.shuffle-right
+{
+    transition: border .5s ease-in-out;
+}
 
 .shuffle-right:hover 
 {
@@ -28,7 +32,7 @@
     opacity: .4;
     opacity: .8;
     z-index: 1;
-    transition: opacity .5s ease-in;
+    transition: all .5s ease-in;
     width: 100%;
     height: 100%;
 }
@@ -85,22 +89,6 @@
     font-weight: 700;
 }
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro Light Oblique";
-  src: url('../../assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
 .shuffle-title h2
 {
     color: var(--whiteColor);
@@ -138,28 +126,19 @@
     align-items: center;
 }
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro";
-  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-
 .shuffle-track
 {
-    font-family: "GT Walsheim Pro Regular";
+    font-family: "GT Walsheim Pro Light";
     font-size: 22px;
     font-weight: bold;
     color: var(--mintColor);
+    color: rgb(226, 240, 227);
 }
 
 .shuffle-tracks h3 
 {
     font-size: 22px;
-    font-family: "GT Walsheim Pro Regular";
-    font-weight: bold;
+    font-family: "GT Walsheim Pro Light";
     color: var(--whiteColor);
 }
 

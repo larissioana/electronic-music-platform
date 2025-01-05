@@ -93,31 +93,6 @@
     padding: .9rem 1rem;
 }
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro";
-  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
 
 .second-event-desc h3 
 {
@@ -132,7 +107,7 @@
     font-size: 10px;
     padding-top: .3rem;
     line-height: .7rem;
-    font-family: 'GT Walsheim Pro Regular', sans-serif; 
+    font-family: 'GT Walsheim Pro', sans-serif; 
 }
 
 .second-event-desc button 
@@ -220,8 +195,7 @@
 {
     font-size: 12px;
     text-decoration: underline;
-    font-weight: 300;
-    font-family: "GT Walsheim Pro Regular", sans-serif;
+    font-family: "GT Walsheim Pro Light";
     line-height: 1rem;
 }
 
@@ -237,22 +211,23 @@
 .first-container p span 
 {
     font-weight: lighter;
-    font-family: "GT Walsheim Pro", sans-serif;
+    font-family: "GT Walsheim Pro Light", sans-serif;
 }
 
 .first-container h4
 {
-    font-weight: 100;
     line-height: 1.3rem;
     padding-top: .3rem;
-    font-family: "GT Walsheim Pro", sans-serif;
+    font-weight: lighter;
+    font-family: "GT Walsheim Pro Light", sans-serif;
 }
 
-.first-container h4 span 
+/* .first-container h4 span 
 {
     font-size: 1.3rem;
+    font-family: "GT Walsheim Pro Light", sans-serif;
 }
-
+ */
 .second-container button 
 {
     border-radius: 23px;
@@ -288,7 +263,7 @@
     border-radius: 1rem;
     padding: .2rem .4rem;
     text-align: center;
-    font-family: "GT Walsheim Pro", sans-serif;
+    font-family: "GT Walsheim Pro Thin Oblique";
     margin-right: 1.4rem;
 }
 

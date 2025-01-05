@@ -71,19 +71,11 @@
     transform: scale(1.17);
 }
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro Light Oblique";
-  src: url('../../assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
 
 .favorite-titles h3 
 {
     font-size: 24.6px;
-    font-family: "GT Walsheim Pro Light Oblique";
+    font-family: "GT Walsheim Pro Light";
 }
 
 

@@ -24,11 +24,39 @@ body
 
 @font-face 
 {
-  font-family: "GT Walsheim";
-  src: url('./assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "GT Walsheim Pro Regular";
+  src: url('./assets/fonts/GTWalsheimPro-Regular.ttf') format('truetype');
 }
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Light";
+  src: url('./assets/fonts/GTWalsheimPro-Light.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Light Oblique";
+  src: url('./assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Thin Oblique";
+  src: url('./assets/fonts/GTWalsheimPro-ThinOblique.ttf') format('truetype');
+}
+
+
+@font-face 
+{
+  font-family: "GT Walsheim Pro Bold";
+  src: url('./assets/fonts/GTWalsheimPro-Bold.ttf') format('truetype');
+}
+
+
+
+
+
 
 @keyframes moveBorder {
   0% {

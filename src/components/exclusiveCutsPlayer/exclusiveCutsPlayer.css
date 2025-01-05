@@ -1,7 +1,5 @@
 .exclusive-cuts-player-container 
 {
-    
-    background: #cddecc;
     background: rgb(236, 255, 235, .74);
     padding: 2rem 3rem;
     border-radius: 5rem;
@@ -74,37 +72,6 @@
     align-items: center;
 }
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro";
-  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Light Oblique";
-  src: url('../../assets/fonts/GTWalsheimPro-LightOblique.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
 
 .filter-btn 
 {
@@ -189,14 +156,14 @@
     padding: 1rem;
     width: 100%;
     border-radius: 2rem;
-    border:2px solid white;
+    border:2px solid rgb(245, 245, 235);
     backdrop-filter: blur(8px);
+    box-shadow: 1px 1px 1px 2px rgb(244, 244, 244);
 }
 
 .player-song h1 
 {
-    font-size: clamp(1.9rem, 2vw, 0.8rem);
-    font-weight: 300;
+    font-size: 24px;
     color: var(--burgundyColor);
     font-family: "GT Walsheim Pro Regular";
 }
@@ -227,8 +194,8 @@
 
 .tracks div
 {
-    font-size: 23px;
-    font-family: "GT Walsheim Pro";
+    font-size: 22.8px;
+    font-family: "GT Walsheim Pro Light";
     font-weight: 400;
     margin-top: -.3rem;
     display: flex;
@@ -301,7 +268,7 @@
     height: 23.5px;
     background: black;
     border-radius: 1rem;
-    margin-left: -2rem;
+    margin-left: -1.6rem;
 }
 
 .exclusive-cuts-player-desc p 

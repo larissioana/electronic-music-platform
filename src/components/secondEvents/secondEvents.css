@@ -37,45 +37,11 @@
 }
 
 
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedRegular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Regular";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro Light";
-  src: url('../../assets/fonts/GTWalsheimPro-UltraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face 
-{
-  font-family: "GT Walsheim Pro";
-  src: url('../../assets/fonts/GTWalsheimPro-CondensedBold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-
 .second-events-first h1 {
-    font-size: 56px;
+    font-size: 46px;
     color: rgba(236, 255, 235, .5);
     text-transform: uppercase;
-    font-family: "GT Walsheim Pro";
+    font-family: "GT Walsheim Pro Bold";
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -87,7 +53,7 @@
 {
     color: var(--whiteColor);
     text-transform: uppercase;
-    font-size: 46px;
+    font-size: 40px;
     font-family: "GT Walsheim Pro Regular";
     font-weight: bold;
     letter-spacing: .1rem;
@@ -98,7 +64,7 @@
 {
     color: var(--whiteColor);
     padding-top: 1rem;
-    font-family: "GT Walsheim Pro";
+    font-family: "GT Walsheim Pro Thin Oblique";
     font-size: 26px;
 }
 
@@ -161,6 +127,7 @@
     font-size: 10px;
     color: var(--burgundyColor);
     font-family: "GT Walsheim Pro Regular";
+    font-weight: 300;
     z-index: 10;
 }
 
@@ -168,13 +135,14 @@
 {
     font-size: 12px;
     font-family: "GT Walsheim Pro Light";
+    font-weight: 300;
     z-index: 10;
 }
 
 .play-btn-container p 
 {
     font-size: 9px;
-    font-family: "GT Walsheim Pro";
+    font-family: "GT Walsheim Pro Thin Oblique";
     z-index: 10;
     color: black;
     font-weight: 200;
@@ -303,6 +271,7 @@
     font-size: 14px;
     cursor: pointer;
     transition: all .8s ease;
+    font-family: "GT Walsheim Pro Regular";
 }
 
 .third-event-btn:hover 
