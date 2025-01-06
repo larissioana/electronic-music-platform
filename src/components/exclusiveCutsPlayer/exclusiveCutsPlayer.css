@@ -1,7 +1,7 @@
 .exclusive-cuts-player-container 
 {
     background: rgb(236, 255, 235, .74);
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     border-radius: 5rem;
     display: flex;
     column-gap: 2rem;
@@ -9,13 +9,12 @@
     align-items: center;
     justify-content: center;
     margin: 0rem 2rem;
-    width: calc(100vw - 4rem);
+      width: calc(100vw - 4rem);
 }
 
 .image-player 
 {
     position: relative;
-    background: blue;
 }
 
 .img-event
@@ -23,8 +22,8 @@
     object-fit: cover;
     position: relative;
     border-radius: 2.4rem;
-    width: 372px;
-    height: 372px;
+    width: 342px;
+    min-height: 342px;
 }
 
 .img-event-play  
@@ -49,7 +48,6 @@
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    background: red;
 }
 
 .player-nav 
@@ -154,21 +152,32 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: var(--whiteColor);
     margin-top: .9rem;
     padding: 1rem;
     border-radius: 2rem;
-    border:2px solid rgb(245, 245, 235);
-    backdrop-filter: blur(8px);
-    box-shadow: 1px 1px 1px 2px rgb(244, 244, 244);
+    border:1px solid var(--whiteColor);
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 }
 
+.player-song-layer 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 252, 251, .6);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
 .player-song h1 
 {
-    font-size: 21px;
     color: var(--burgundyColor);
     font-family: "GT Walsheim Pro Regular";
-    font-size: clamp(1rem, 2vw, 1.47rem);
+    font-size: clamp(1rem, 2vw, 1.63rem);
+    z-index: 9;
 }
 
 .tracks-container
@@ -198,14 +207,13 @@
 .tracks div
 {
     font-size: 22px;
-    font-size: clamp(1rem, 2vw, 1.38rem);
+    font-size: clamp(1rem, 1.5vw, 1.45rem);
     font-family: "GT Walsheim Pro Light";
     font-weight: 400;
     margin-top: -.3rem;
     display: flex;
     gap: 1.6rem;
     align-items: flex-end;
-    flex-wrap: nowrap;
 }
 
 .small-line
@@ -221,11 +229,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 97%;
+    width: 96%;
     padding-top: 1.5rem;
     flex-wrap: wrap;
     row-gap: 2rem;
-    width: 95%;
 }
 
 .social-media 
@@ -233,6 +240,7 @@
     display: flex;
     align-items: center;
     gap: 1.3rem;
+    flex-shrink: 1;
 }
 
 .icons-container button 
@@ -274,24 +282,35 @@
     height: 23.5px;
     background: black;
     border-radius: 1rem;
-    margin-left: 3.3rem; 
+    margin-left: 2rem; 
 }
 
 .exclusive-cuts-player-desc p 
 {
     color: var(--burgundyColor);
     font-size: 18px;
-    font-size: clamp(1rem, 2vw, 1.15rem);
+    font-size: clamp(1rem, 2vw, 1.22rem);
     text-align: start;
     font-family: "GT Walsheim Pro Light Oblique";
     text-align-last: justify;
+    width: fit-content;
 }
 
-@media screen and (max-width: 1400px)
+
+.player-song img 
+{
+    z-index: 9;
+}
+
+.mobile-exclusive-cuts 
+{
+    display: none;
+}
+@media screen and (max-width: 1200px)
 {
     .exclusive-cuts-player-container
     {
-        flex-direction: column-reverse;
+       flex-direction: column-reverse; 
         justify-content: center;
         align-items: center;
         row-gap: 2rem;
@@ -315,4 +334,181 @@
     {
         column-gap: 2rem;
     }
+}
+
+@media screen and (max-width: 393px)
+{
+   .exclusive-cuts-player-container
+   {
+        display: none;
+   }
+
+   .mobile-exclusive-cuts
+   {
+    display: block;
+   }
+
+   .image-player-mobile 
+   {
+    max-width: 308px;
+    max-height: 308px;
+    position: relative;
+    margin: 0 auto;
+   }
+   .img-event-mobile 
+   {
+    width: 100%;
+    height: 100%;
+   }
+
+   .img-event-play-mobile 
+   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98.16px;
+    height: 98.16px;
+    object-fit: cover;
+   }
+
+   .mobile-track 
+   {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--whiteColor);
+    gap: .7rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+   }
+
+   .mobile-track img 
+   {
+    width: 10.11px;
+    height: 10.77px;
+    object-fit: cover;
+    margin-top: .3rem;
+   }
+
+   .mobile-track h3 
+   {
+    font-size: 17px;
+    font-family: "GT Walsheim Pro Regular";
+   }
+
+   .mobile-track h4 
+   {
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+   }
+
+   .mobile-desc-player 
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3rem;
+    gap: .6rem;
+    flex-wrap: wrap;
+   }
+
+   .mobile-desc-player p 
+   {
+    color: var(--whiteColor);
+    font-size: 10px;
+    font-family: "GT Walsheim Pro Light Oblique";
+   }
+
+   .mobile-desc-player p span
+   {
+    color: var(--yellowColor);
+    font-family: "GT Walsheim Pro Light Oblique";
+   }
+
+   .mobile-desc-player-btn
+   {
+    padding-top: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .mobile-desc-player-btn button 
+   {
+    background: var(--yellowColor);
+    border: none;
+    width: 160px;
+    height: 35.25px;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "MuseoModerno", sans-serif;
+   }
+   .mobile-filter 
+   {
+    display: flex;
+    justify-content: space-between;
+
+    padding: .7rem 1.5rem;
+   }
+
+   .mobile-filter-left 
+   {
+    display: flex;
+    background: var(--mintColor);
+    align-items: center;
+    width: 76px;
+    height: 19px;
+    border: 1px solid var(--burgundyColor);
+    justify-content: center;
+    gap: .3rem;
+    border-radius: 1rem;
+    
+   }
+
+   .mobile-filter-left img 
+   {
+    width: 11.11px;
+    height: 6.43px;
+    object-fit: cover;
+   }
+
+   .mobile-filter-left p 
+   {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 15px;
+    color: var(--burgundyColor);
+   }
+
+   .mobile-filter-right 
+   {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+   }
+
+   .mobile-desc 
+   {
+    max-width: 325px;
+    margin: 0 auto;
+    min-height: 86px;
+    background: var(--burgundyColor);
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .7rem;
+   }
+
+   .mobile-desc p 
+   {
+    color: var(--mintColor);
+    font-size: 10px;
+    font-family: "GT Walsheim Pro Thin Oblique";
+    text-align: justify;
+   }
 }

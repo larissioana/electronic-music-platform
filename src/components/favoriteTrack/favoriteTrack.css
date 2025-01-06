@@ -179,3 +179,12 @@
         padding-bottom: 1rem;
     }
 }
+
+
+@media screen and (max-width: 393px)
+{
+    .favorite-container
+    {
+        display: none;
+    }
+}

@@ -11,7 +11,7 @@ const Events = () => {
                 style={{
                     backgroundImage: `url(${event1})`,
                     backgroundSize: "cover",
-                    backgroundPosition: "top"
+                    backgroundPosition: "center"
                 }}
             >
             </div>

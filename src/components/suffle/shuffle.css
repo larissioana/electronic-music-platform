@@ -78,7 +78,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: end;
+    max-width: 70%;
 }
 
 .shuffle-title h1 
@@ -91,10 +92,12 @@
 
 .shuffle-title h2
 {
-    color: var(--whiteColor);
+    color: var(--mintColor);
     font-size: 36px;
     font-family: "GT Walsheim Pro Light Oblique";
     margin-top: -.5rem;
+    font-weight: lighter;
+    margin-right: 1.2rem;
 }
 
 .shuffle-tracks 
@@ -107,7 +110,8 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    padding: 1rem;
+    padding: .5rem 1.5rem;
+    gap: .5rem;
 }
 
 .shuffle-track 
@@ -190,7 +194,10 @@
     margin-left: 2rem;
 }
 
-
+.mobile-shuffle 
+{
+    display: none;
+}
 @media screen and (max-width: 900px)
 {
     .shuffle-container
@@ -234,5 +241,163 @@
     .shuffle-right
     {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 393px)
+{
+    .shuffle-container
+    {
+        display: none;
+    }
+
+    .mobile-shuffle
+    {
+        background: var(--mintColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 325px;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 48px;
+        margin-top: 1.5rem;
+        padding: .8rem;
+
+    }
+
+    .mobile-title-shuffle 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mobile-title-shuffle h2 
+    {
+        font-size: 22px;
+        color: var(--burgundyColor);
+        font-family: "MuseoModerno", sans-serif;
+    }
+
+    .mobile-title-shuffle h3 
+    {
+        color: black;
+        font-size: 18px;
+        font-family: "GT Walsheim Pro Light Oblique";
+        margin-right: .9rem;
+        margin-top: -.3rem;
+    }
+
+    .mobile-cover 
+    {
+        max-width: 248px;
+        max-height: 248px;
+        position: relative;
+        border-radius: 65px;
+        margin-top: 1rem;
+    }
+
+    .mobile-cover-img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 65px;
+    }
+
+    .mobile-play 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 109px;
+        height: 109px;
+    }
+
+    .mobile-layer-cover 
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(0,0,0,.74);
+        z-index: 8;
+        border-radius: 65px;
+        border: 2px solid black;
+    }
+
+    .mobile-shuffle-track 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+    }
+
+    .mobile-shuffle-track img 
+    {
+        width: 19.18px;
+        height: 19.18px;
+        object-fit: cover;
+    }
+
+    .mobile-shuffle-tracks-title 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: .5rem;
+        align-items: center;
+    }
+
+    .mobile-shuffle-tracks-title h3
+    {
+        font-size: 10px;
+        font-family: "GT Walsheim Pro Light";
+        color: var(--burgundyColor);
+    }
+
+    .mobile-shuffle-tracks-title h2
+    {
+        font-size: 10px;
+        font-family: "GT Walsheim Pro Light";
+        color: var(--yellowColor);
+    }
+
+    .shuffle-mobile-btn 
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 276px;
+       height: 64px;
+       margin: 0 auto;
+       border-radius: 30px;
+       margin-top: .8rem;
+       margin-bottom: .8rem;
+       background: var(--mintColor);
+    }
+
+    .shuffle-mobile-btn button 
+    {
+        background: none;
+        border: none;
+        font-size: 42px;
+        text-transform: uppercase;
+        font-family: "MuseoModerno", sans-serif;
+        font-weight: 600;
+        color: var(--burgundyColor);
+    }
+
+    .shuffle-mobile-line 
+    {
+        padding-bottom: .8rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -129,3 +129,28 @@
         backdrop-filter: blur(8px);
     }
 }
+
+@media screen and (max-width: 393px)
+{
+    .burger-menu img 
+    {
+        width: 29px;
+        height: 16.79px;
+        object-fit: cover;
+    }
+
+    .logo-link
+    {
+        font-size: 30px;
+    }
+
+    .link 
+    {
+        font-size: 1.5rem;
+    }
+
+    .nav
+    {
+        height: 2rem;
+    }
+}

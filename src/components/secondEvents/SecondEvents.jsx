@@ -1,7 +1,7 @@
 import './secondEvents.css'
 import event1 from '../../assets/second-event-first.png'
 import event2 from '../../assets/second-event-second.png'
-import event3 from '../../assets/second-event-third.png'
+import event3 from '../../assets/male-dj-working-studio 1.png'
 import playIcon from '../../assets/play icon(2).png'
 import cover from '../../assets/Niko Klest_single cover 1.png'
 import { gsap } from 'gsap'

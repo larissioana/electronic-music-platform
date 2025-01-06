@@ -1,6 +1,6 @@
 import './navbar.css'
 import { Link, useLocation } from 'react-router-dom'
-import burgerMenu from '../../assets/icons8-menu-64.png'
+import burgerMenu from '../../assets/Group 11.png'
 import closeMenu from '../../assets/icons8-x-64.png'
 import { useState, useRef, useEffect } from 'react'
 import { gsap } from "gsap";
@@ -64,9 +64,9 @@ const Navbar = () => {
             <div className="burger-menu" onClick={handleMobileMenu}>
                 {
                     !isMobileMenuOpen ?
-                        <img src={burgerMenu} alt="burger menu" width="52px" />
+                        <img src={burgerMenu} alt="burger menu" />
                         :
-                        <img src={closeMenu} alt="close menu" width="52px" />
+                        <img src={closeMenu} alt="close menu" />
                 }
             </div>
             {
