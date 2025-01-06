@@ -117,7 +117,7 @@
         width: 100%;
         display: flex;
         position: fixed;
-        z-index: 10;
+        z-index: 99;
         top: 0rem;
         left: 0;
         flex-direction: column;
