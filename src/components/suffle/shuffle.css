@@ -198,6 +198,16 @@
 {
     display: none;
 }
+
+.shuffle-mobile-btn
+{
+    display: none;
+}
+
+.shuffle-mobile-line 
+{
+    display: none;
+}
 @media screen and (max-width: 900px)
 {
     .shuffle-container
@@ -335,7 +345,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: .8rem;
+        gap: 1.7rem;
+        width: 100%;
     }
 
     .mobile-shuffle-track img 
